@@ -1,5 +1,5 @@
 # BC4
-## SSH login [serverfault](https://serverfault.com/questions/241588/how-to-automate-ssh-login-with-password)
+## SSH login ([serverfault](https://serverfault.com/questions/241588/how-to-automate-ssh-login-with-password))
 
 ```{bash}
 # you can skip passphrase and save the key in the default path by hit enter
@@ -9,8 +9,8 @@ ssh-copy-id yourusername@bc4login.acrc.bris.ac.uk
 # You now can login in by using
 ssh yourusername@bc4login.acrc.bris.ac.uk
 ```
-
-In order to make my life easier, I write a bash command to generate automatically. Download the autokey.sh and run `./autokey.sh`, then fill in your information, happy happy joy joy :)
+## Happy life
+In order to make my life easier, I write a bash command to generate automatically. Download the autokey.sh and run `./autokey.sh`, then fill in your information, that's all :)
 ```{bash}
 wget -N --no-check-certificate https://raw.githubusercontent.com/xihajun/Data-Science-Deep-learning-Sam_Jun/master/BC4/autokey.sh && bash auto.sh
 ```
