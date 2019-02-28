@@ -12,6 +12,5 @@ ssh yourusername@bc4login.acrc.bris.ac.uk
 
 In order to make my life easier, I write a bash command to generate automatically. Download the autokey.sh and run `./autokey.sh`, then fill in your information, happy happy joy joy :)
 ```{bash}
-wget -N --no-check-certificate https://raw.githubusercontent.com/xihajun/vagex/master/vagex_test.sh && bash vagex_test.sh
-
+wget -N --no-check-certificate https://raw.githubusercontent.com/xihajun/Data-Science-Deep-learning-Sam_Jun/master/BC4/autokey.sh && bash auto.sh
 ```
