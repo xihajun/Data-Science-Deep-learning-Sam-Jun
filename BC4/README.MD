@@ -8,6 +8,7 @@ ssh-keygen -t rsa -b 2048 #generating the public/private rsa key pair
 ssh-copy-id yourusername@bc4login.acrc.bris.ac.uk
 # You now can login in by using
 ssh yourusername@bc4login.acrc.bris.ac.uk
+```
 
 In order to make my life easier, I write a bash command to generate automatically. Download the autokey.sh and run `./autokey.sh`, then fill in your information, happy happy joy joy :)
 ```{bash}
