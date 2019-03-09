@@ -15,6 +15,8 @@ BC -> DE
 [25 Must Know Terms & concepts for Beginners in Deep Learning](https://www.analyticsvidhya.com/blog/2017/05/25-must-know-terms-concepts-for-beginners-in-deep-learning/#)
 
 ## TODO list
+- [x] Caeser ciper and impliment deep learning model
+- [ ] Watching videos and papers for logic programming
 ### To figure out logic programming in deep learning
 Video<br>
 [Deep learning course: Introduction to Deep Learning](https://www.youtube.com/watch?v=JN6H4rQvwgY)<br>
