@@ -11,8 +11,6 @@ CD -> EF
 
 BC -> DE 
 
-## Reference
-[25 Must Know Terms & concepts for Beginners in Deep Learning](https://www.analyticsvidhya.com/blog/2017/05/25-must-know-terms-concepts-for-beginners-in-deep-learning/#)
 
 ## TODO list
 - [x] Caeser ciper and impliment deep learning model
@@ -39,3 +37,8 @@ http://linbo.github.io/2013/01/08/python-with
 ## Code reference
 ### Caeser ciper
 https://gist.github.com/jameslyons/8701593
+
+
+
+## Reference
+[25 Must Know Terms & concepts for Beginners in Deep Learning](https://www.analyticsvidhya.com/blog/2017/05/25-must-know-terms-concepts-for-beginners-in-deep-learning/#)
