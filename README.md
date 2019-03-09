@@ -17,7 +17,7 @@ BC -> DE
 ## TODO list
 ### To figure out logic programming in deep learning
 Video<br>
-[Deep learning course](https://www.youtube.com/watch?v=JN6H4rQvwgY)
+[Deep learning course: Introduction to Deep Learning](https://www.youtube.com/watch?v=JN6H4rQvwgY)<br>
 [Richard Evans: Inductive logic programming and deep learning I](https://www.youtube.com/watch?v=yD02DlZnHJw)<br>
 [Learning Explanatory Rules from Noisy Data - Richard Evans, DeepMind](https://www.youtube.com/watch?v=_wuFBF_Cgm0&t=24s)<br>
 Paper<br>
