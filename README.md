@@ -14,6 +14,19 @@ BC -> DE
 
 ## TODO list
 - [x] Caeser ciper and impliment deep learning model
+- [ ] Try to play around with caeser ciper and deep learning input and output
+* - [ ] input 3(d) -- output a(0)
+* - [ ] input 3(d) -- output (1,0,0,...,0)
+* - [ ] input (0,0,0,1,0,...,0) -- output a(0)
+* - [ ] input (0,0,0,1,0,...,0) -- output (1,0,0,...,0)
+* - [ ] input (0,0,0,1,0,...,0) -- output (1,0,0,...,0)
+- [ ] Analyse this results
+* For example, which model minimises the number of echos 
+* Which model cannot reach the 100% accuracy
+- [ ] Try to add more training data, see if things change
+* If it is better, try to explain why
+* If it is not, maybe 23 is enough?
+* My prior: Maybe more data can make the training procedure faster?
 - [ ] Watching videos and papers for logic programming
 ### To figure out logic programming in deep learning
 Video<br>
