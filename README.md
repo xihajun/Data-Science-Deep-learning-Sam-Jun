@@ -22,8 +22,9 @@ Video<br>
 [Learning Explanatory Rules from Noisy Data - Richard Evans, DeepMind](https://www.youtube.com/watch?v=_wuFBF_Cgm0&t=24s)<br>
 Paper<br>
 [LOGIC MINING USING NEURAL NETWORKS](https://arxiv.org/pdf/0804.4071.pdf)<br>
-[First-order Logic Learning in Artificial Neural Networks](https://core.ac.uk/download/pdf/17294404.pdf)
-
+[First-order Logic Learning in Artificial Neural Networks](https://core.ac.uk/download/pdf/17294404.pdf)<br>
+Python logic programming
+[PYKE](http://pyke.sourceforge.net/index.html)
 ## Issue for using keras
 ### Shape issue
 https://github.com/MorvanZhou/tutorials/issues/30
