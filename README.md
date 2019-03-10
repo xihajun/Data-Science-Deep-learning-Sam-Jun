@@ -1,10 +1,9 @@
 # Data-Science-Deep-learning-Sam_Jun
 Learning deep learning this time!
 
-## Caeser encryption function prediction
-
 ## TODO list
 - [x] **Caeser ciper and impliment deep learning model**
+* Caeser encryption function prediction
 - [ ] **Try to play around with caeser ciper and deep learning input and output**
 * - [ ] input 3(d) -- output a(0)
 * - [ ] input 3(d) -- output (1,0,0,...,0)
@@ -58,7 +57,9 @@ Python logic programming<br>
 - [ ] **Try to use ILD to guide our neural system**
 * How? Set rules, recurrent?
 
-
+- [ ] **Try to find new encryption function to learn more complex stuff**
+* key=[1,2,3,4]? 
+* Consider the input and output
 ## Issue - keras
 ~~* [fixed] Shape issue
 https://github.com/MorvanZhou/tutorials/issues/30~~
