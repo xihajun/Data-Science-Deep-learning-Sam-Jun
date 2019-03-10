@@ -3,10 +3,6 @@ Learning deep learning this time!
 
 ## Caeser encryption function prediction
 
-## More deeper
-Combined with two words (we know the number of combination is too large, we just want to test, if neural network could learn something unseen?
-
-
 ## TODO list
 - [x] Caeser ciper and impliment deep learning model
 - [ ] Try to play around with caeser ciper and deep learning input and output
@@ -26,7 +22,7 @@ Combined with two words (we know the number of combination is too large, we just
 * For human, it is reasonable if we hide z, we are able to judge the one we cannot see (high probability)
 * I tried it makes no sense so far. 98%?
 - [ ] Try to given pairs of data, and change the structure of neural output and input
-* How many we combination we have? **676** (no order)
+* How many we combination we have? **676** (no order). More deeperly, combining with more words (we know the number of combination is too large, we just want to test, if neural network could learn something unseen?
 * Need a smart way to do this (consider to restruct the input and output as well as the order)<br>
 
 Set|Input| Output|Seen
