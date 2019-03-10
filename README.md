@@ -54,9 +54,14 @@ Paper<br>
 [First-order Logic Learning in Artificial Neural Networks](https://core.ac.uk/download/pdf/17294404.pdf)<br>
 Python logic programming<br>
 [PYKE](http://pyke.sourceforge.net/index.html)
+
+- [ ] **Try to use ILD to guide our neural system**
+* How? Set rules, recurrent?
+
+
 ## Issue for using keras
-* Shape issue
-https://github.com/MorvanZhou/tutorials/issues/30
+~~* [fixed] Shape issue
+https://github.com/MorvanZhou/tutorials/issues/30~~
 
 ## Python tips
 * List to array
