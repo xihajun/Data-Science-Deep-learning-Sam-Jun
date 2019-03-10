@@ -59,8 +59,10 @@ https://github.com/MorvanZhou/tutorials/issues/30
 
 ## Python tips
 ### List to array
-
-### With in python
+```{python}
+variable_name = np.array(yourlist_name)
+```
+### `with` in python
 http://linbo.github.io/2013/01/08/python-with
 
 ## Code reference
