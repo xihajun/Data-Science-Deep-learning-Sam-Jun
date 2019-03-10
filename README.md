@@ -59,7 +59,7 @@ Python logic programming<br>
 * How? Set rules, recurrent?
 
 
-## Issue for using keras
+## Issue - keras
 ~~* [fixed] Shape issue
 https://github.com/MorvanZhou/tutorials/issues/30~~
 
