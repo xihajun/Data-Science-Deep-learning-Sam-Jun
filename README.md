@@ -14,6 +14,10 @@ Learning deep learning this time!
 - [ ] **Analyse this results**
 * For example, which model minimises the number of echos 
 * Which model cannot reach the 100% accuracy? Why?
+- [ ] **Using unseen data 26-100**
+* The model has seen 0-26)
+* Try to find the weight in this model
+* Try to visualize it by using tensorboard
 - [ ] **Try to add more training data, see if things change**
 * If it is better, try to explain why
 * If it is not, maybe 23 is enough?
