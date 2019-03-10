@@ -1,3 +1,9 @@
 # macbook
 .DS_Store
 */.DS_Store
+venv/*
+venv
+testing-google-colab-master
+testing-google-colab-master/*
+documents/.ipynb_checkpoints/
+documents/.ipynb_checkpoints/*
