@@ -43,7 +43,7 @@ Testing | BA | ED |No
 
 * Idea: 
 - [ ] Watching videos and papers for logic programming
-### To figure out logic programming in deep learning
+* To figure out logic programming in deep learning
 Video<br>
 [Deep learning course: Introduction to Deep Learning](https://www.youtube.com/watch?v=JN6H4rQvwgY)<br>
 [Richard Evans: Inductive logic programming and deep learning I](https://www.youtube.com/watch?v=yD02DlZnHJw)<br>
@@ -54,19 +54,19 @@ Paper<br>
 Python logic programming<br>
 [PYKE](http://pyke.sourceforge.net/index.html)
 ## Issue for using keras
-### Shape issue
+* Shape issue
 https://github.com/MorvanZhou/tutorials/issues/30
 
 ## Python tips
-### List to array
+* List to array
 ```{python}
 variable_name = np.array(yourlist_name)
 ```
-### `with` in python
+* `with` in python
 http://linbo.github.io/2013/01/08/python-with
 
 ## Code reference
-### Caeser ciper
+* Caeser ciper
 https://gist.github.com/jameslyons/8701593
 
 
