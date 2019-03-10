@@ -23,7 +23,7 @@ Video<br>
 Paper<br>
 [LOGIC MINING USING NEURAL NETWORKS](https://arxiv.org/pdf/0804.4071.pdf)<br>
 [First-order Logic Learning in Artificial Neural Networks](https://core.ac.uk/download/pdf/17294404.pdf)<br>
-Python logic programming
+Python logic programming<br>
 [PYKE](http://pyke.sourceforge.net/index.html)
 ## Issue for using keras
 ### Shape issue
