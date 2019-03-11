@@ -31,9 +31,6 @@ Learning deep learning this time!
 * Need a smart way to do this (consider to restruct the input and output as well as the order)<br>
 
 
-
-</td><td>
-
 <table>
 <tr><th>Example 1 </th><th>Example 2</th></tr>
 <tr><td>
@@ -53,25 +50,27 @@ Training| AB | DE |Yes
 Testing | BA | ED |No
 
 </td></tr> </table>
+
 * Idea: 
 - [ ] **Watching videos and papers for logic programming**
-* To figure out logic programming in deep learning
-Video<br>
-[Deep learning course: Introduction to Deep Learning](https://www.youtube.com/watch?v=JN6H4rQvwgY)<br>
-[Richard Evans: Inductive logic programming and deep learning I](https://www.youtube.com/watch?v=yD02DlZnHJw)<br>
-[Learning Explanatory Rules from Noisy Data - Richard Evans, DeepMind](https://www.youtube.com/watch?v=_wuFBF_Cgm0&t=24s)<br>
-Paper<br>
-[LOGIC MINING USING NEURAL NETWORKS](https://arxiv.org/pdf/0804.4071.pdf)<br>
-[First-order Logic Learning in Artificial Neural Networks](https://core.ac.uk/download/pdf/17294404.pdf)<br>
-Python logic programming<br>
-[PYKE](http://pyke.sourceforge.net/index.html)
+
+    To figure out logic programming in deep learning
+    Video<br>
+    [Deep learning course: Introduction to Deep Learning](https://www.youtube.com/watch?v=JN6H4rQvwgY)<br>
+    [Richard Evans: Inductive logic programming and deep learning I](https://www.youtube.com/watch?v=yD02DlZnHJw)<br>
+    [Learning Explanatory Rules from Noisy Data - Richard Evans, DeepMind](https://www.youtube.com/watch?v=_wuFBF_Cgm0&t=24s)<br>
+    Paper<br>
+    [LOGIC MINING USING NEURAL NETWORKS](https://arxiv.org/pdf/0804.4071.pdf)<br>
+    [First-order Logic Learning in Artificial Neural Networks](https://core.ac.uk/download/pdf/17294404.pdf)<br>
+    Python logic programming<br>
+    [PYKE](http://pyke.sourceforge.net/index.html)
 
 - [ ] **Try to use ILD to guide our neural system**
-* How? Set rules, recurrent?
+    How? Set rules, recurrent?
 
 - [ ] **Try to find new encryption function to learn more complex stuff**
-* key=[1,2,3,4]? 
-* Consider the input and output
+    key=[1,2,3,4]? 
+    Consider the input and output
 ## Issue - keras
 ~~* [fixed] Shape issue
 https://github.com/MorvanZhou/tutorials/issues/30~~
