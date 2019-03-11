@@ -54,7 +54,7 @@ Testing | BA | ED |No
 * Idea: 
 - [ ] **Watching videos and papers for logic programming**
 
-    To figure out logic programming in deep learning
+    To figure out logic programming in deep learning<br>
     Video<br>
     [Deep learning course: Introduction to Deep Learning](https://www.youtube.com/watch?v=JN6H4rQvwgY)<br>
     [Richard Evans: Inductive logic programming and deep learning I](https://www.youtube.com/watch?v=yD02DlZnHJw)<br>
@@ -66,11 +66,13 @@ Testing | BA | ED |No
     [PYKE](http://pyke.sourceforge.net/index.html)
 
 - [ ] **Try to use ILD to guide our neural system**
+
     How? Set rules, recurrent?
 
 - [ ] **Try to find new encryption function to learn more complex stuff**
 
     key=[1,2,3,4]? 
+    
     Consider the input and output
     
     
