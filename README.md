@@ -69,8 +69,12 @@ Testing | BA | ED |No
     How? Set rules, recurrent?
 
 - [ ] **Try to find new encryption function to learn more complex stuff**
+
     key=[1,2,3,4]? 
     Consider the input and output
+    
+    
+   
 ## Issue - keras
 ~~* [fixed] Shape issue
 https://github.com/MorvanZhou/tutorials/issues/30~~
