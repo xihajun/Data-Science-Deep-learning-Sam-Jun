@@ -13,7 +13,9 @@ Learning deep learning this time!
 - [ ] **Analyse this results**
 
    For example, which model minimises the number of echos 
+   
    Which model cannot reach the 100% accuracy? Why?
+   
 - [ ] **Using unseen data 26-100**
 
     The model has seen 0-26)<br>
