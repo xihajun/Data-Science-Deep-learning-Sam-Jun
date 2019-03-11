@@ -16,12 +16,12 @@ Learning deep learning this time!
    Which model cannot reach the 100% accuracy? Why?
 - [ ] **Using unseen data 26-100**
 
-    The model has seen 0-26)
-    Try to find the weight in this model
-    Try to visualize it by using tensorboard
+    The model has seen 0-26)<br>
+    Try to find the weight in this model<br>
+    Try to visualize it by using tensorboard<br>
 - [ ] **Try to add more training data, see if things change**
-    If it is better, try to explain why
-    If it is not, maybe 23 is enough?
+    If it is better, try to explain why<br>
+    If it is not, maybe 23 is enough?<br>
 * My prior: Maybe more data can make the training procedure faster? I don't know given the same input how doesthe neural network learn? Stop updating or **keep updating**?
 - [ ] **Try to hide some data**
 * For human, it is reasonable if we hide z, we are able to judge the one we cannot see (high probability)
