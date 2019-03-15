@@ -54,6 +54,9 @@ Testing | BA | ED |No
 </td></tr> </table>
 
 * Idea: (1,1,0,0,0) or (1,2,0,0,0)
+
+
+- [ ] **Add noise for the dataset**
 - [ ] **Watching videos and papers for logic programming**
 
     To figure out logic programming in deep learning<br>
