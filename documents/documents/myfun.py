@@ -12,6 +12,7 @@ from keras.models import Sequential
 from keras.layers import Dense
 import numpy as np
 import string
+import random
 # fix random seed for reproducibility
 np.random.seed(7)
 
@@ -73,20 +74,53 @@ def letter_position_matrix(text, key= 3, size = 26):
     matrix = np.array(matrix)
     return matrix
 
-def data_genelization(sample_size=2,loops = 1000):
-    temp = ''.join(random.choices(string.ascii_uppercase, k = sample_size))
-    ciphertext, ciphernum, plainnum = caeserde_1(temp)
-    a = letter_position_matrix(plainnum)
-    b = letter_position_matrix(ciphernum)
+def data_test(temp, sample_size = 2,loops = 1000, size = 26, key = 3, x_as_vector = False, y_as_vector = False):
+    '''
+        data_genelization(sample_size = 2,loops = 1000, size = 26, key = 3, x_as_vector = False, y_as_vector = False):
+        return x_train, label with equual size, labels with 1 dimension
+    '''
+    ciphertext, ciphernum, plainnum = caeserde(temp[0], key = key, size = size, x_as_vector = x_as_vector, y_as_vector = y_as_vector)
+    a = letter_position_matrix(plainnum, size = size)
+    b = letter_position_matrix(ciphernum, size = size)
+    label_smaller = np.array(plainnum)
+    # flatten label and training set
+    label_equalsize = a.flatten()
+    train = b.flatten()
+    for i in range(len(temp)):
+        ciphertext, ciphernum, plainnum = caeserde(temp[0], key = key, size = size, x_as_vector = x_as_vector, y_as_vector = y_as_vector)
+        # get the letter position matrix for plaintext and cipertext
+        a = letter_position_matrix(plainnum, size = size)
+        b = letter_position_matrix(ciphernum, size = size)
+        # get labels with 1 dimension (eg. abc, 123)
+        label_smaller = np.vstack([label_smaller,np.array(plainnum)])
+        # flatten label and training set
+        label_equalsize = np.vstack([label_equalsize,a.flatten()])
+        train = np.vstack([train,b.flatten()])
+        
+    return(train,label_equalsize,label_smaller)
+    
+def data_genelization(sample_size = 2,loops = 1000, size = 26, key = 3, x_as_vector = False, y_as_vector = False):
+    '''
+        data_genelization(sample_size = 2,loops = 1000, size = 26, key = 3, x_as_vector = False, y_as_vector = False):
+        return x_train, label with equual size, labels with 1 dimension
+    '''
+    temp = ''.join(random.choices(string.ascii_uppercase[0:size], k = sample_size))
+    ciphertext, ciphernum, plainnum = caeserde(temp, key = key, size = size, x_as_vector = x_as_vector, y_as_vector = y_as_vector)
+    a = letter_position_matrix(plainnum, size = size)
+    b = letter_position_matrix(ciphernum, size = size)
     label_smaller = np.array(plainnum)
     # flatten label and training set
     label_equalsize = a.flatten()
     train = b.flatten()
     for i in range(loops-1):
-        temp = ''.join(random.choices(string.ascii_uppercase, k = sample_size))
-        ciphertext, ciphernum, plainnum = caeserde_1(temp)
-        a = letter_position_matrix(plainnum)
-        b = letter_position_matrix(ciphernum)
+        # randomly generate strings
+        temp = ''.join(random.choices(string.ascii_uppercase[0:size], k = sample_size))
+        # caeser decoding
+        ciphertext, ciphernum, plainnum = caeserde(temp, key = key, size = size, x_as_vector = x_as_vector, y_as_vector = y_as_vector)
+        # get the letter position matrix for plaintext and cipertext
+        a = letter_position_matrix(plainnum, size = size)
+        b = letter_position_matrix(ciphernum, size = size)
+        # get labels with 1 dimension (eg. abc, 123)
         label_smaller = np.vstack([label_smaller,np.array(plainnum)])
         # flatten label and training set
         label_equalsize = np.vstack([label_equalsize,a.flatten()])
