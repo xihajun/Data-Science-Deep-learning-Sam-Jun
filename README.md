@@ -8,8 +8,7 @@ Learning deep learning this time!
     - [ ] input 3(d) -- output a(0)
     - [ ] input 3(d) -- output (1,0,0,...,0)
     - [ ] input (0,0,0,1,0,...,0) -- output a(0)
-    - [ ] input (0,0,0,1,0,...,0) -- output (1,0,0,...,0)
-    - [ ] input (0,0,0,1,0,...,0) -- output (1,0,0,...,0)
+    - [x] input (0,0,0,1,0,...,0) -- output (1,0,0,...,0)
 - [ ] **Analyse this results**
 
    For example, which model minimises the number of echos 
@@ -21,14 +20,15 @@ Learning deep learning this time!
     The model has seen 0-26)<br>
     Try to find the weight in this model<br>
     Try to visualize it by using tensorboard<br>
-- [ ] **Try to add more training data, see if things change**<br>
+- [x] **Try to add more training data, see if things change**<br>
+    **It reduces the num of epochs.**
     If it is better, try to explain why<br>
     If it is not, maybe 23 is enough?<br>
 * My prior: Maybe more data can make the training procedure faster? I don't know given the same input how doesthe neural network learn? Stop updating or **keep updating**?
 - [ ] **Try to hide some data**
 * For human, it is reasonable if we hide z, we are able to judge the one we cannot see (high probability)
 * I tried it makes no sense so far. 98%?
-- [ ] **Try to given pairs of data, and change the structure of neural output and input**
+- [x] **Try to given pairs of data, and change the structure of neural output and input**
 * How many we combination we have? **676** (no order). More deeperly, combining with more words (we know the number of combination is too large, we just want to test, if neural network could learn something unseen?
 * Need a smart way to do this (consider to restruct the input and output as well as the order)<br>
 
@@ -54,9 +54,12 @@ Testing | BA | ED |No
 </td></tr> </table>
 
 * Idea: (1,1,0,0,0) or (1,2,0,0,0)
+* Defined an position matrix which considers the order
 
+- [x] **Add noise for the dataset**
+* Given 0.1 0.2 errors, see the prediction results
+* plot the prediction acc
 
-- [ ] **Add noise for the dataset**
 - [ ] **Watching videos and papers for logic programming**
 
     To figure out logic programming in deep learning<br>
