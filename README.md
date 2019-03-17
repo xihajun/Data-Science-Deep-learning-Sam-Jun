@@ -1,6 +1,6 @@
 # Data-Science-Deep-learning-Sam_Jun
 
-As Deep learning are able to learn all the function, this time we are trying to make our model learning the encryption function.
+As Deep learning is able to learn all the function, this time we are trying to make our model learning the encryption function.
 Firstly, let start at the basic caeser encryption!(as the algorithm is determined, it might be too easy for neural networks to learn it) 
 
 Our plan is to make model as simple as possible in order to find out the deep meanning in deep learning model. We will analyse the accuracy and loss curve as we change different hyperparameters (eg, num of layers, input output architechture, optimisor, loss function and so on). When we reduce our num of layer and neurons into a small number, we are able to use the definition of neural network to **calculate the prediction** result by using our _weights and bias_ given input. See the weights distribution if there exist an weight that dominate the model?
