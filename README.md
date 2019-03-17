@@ -1,6 +1,14 @@
 # Data-Science-Deep-learning-Sam_Jun
-Learning deep learning this time!
 
+As Deep learning are able to learn all the function, this time we are trying to make our model learning the encryption function.
+Firstly, let start at the basic caeser encryption!(as the algorithm is determined, it might be too easy for neural networks to learn it) 
+
+Our plan is to make model as simple as possible in order to find out the deep meanning in deep learning model. We will analyse the accuracy and loss curve as we change different hyperparameters (eg, num of layers, input output architechture, optimisor, loss function and so on). When we reduce our num of layer and neurons into a small number, we are able to use the definition of neural network to **calculate the prediction** result by using our _weights and bias_ given input. See the weights distribution if there exist an weight that dominate the model?
+
+Also, we are trying to figure out if the DL algorithms are robust to random errors in the training set, so we add noise for our labels and get an **Accuracy Curve**(it should be the general accuracy curve and not general)
+
+In addtion, we are going to hide some data, as we can see this function is an one-to-one correspondence, but when we hide one letter(eg, z) if the deep learning algrithm can learned it should be follow the same rule?**(We will try this in 1*20*20*1 neural network.)**
+# Caeser
 ## TODO list
 - [x] **Caeser ciper and impliment deep learning model**
 * Caeser encryption function prediction
