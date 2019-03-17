@@ -8,6 +8,11 @@ Our plan is to make model as simple as possible in order to find out the deep me
 Also, we are trying to figure out if the DL algorithms are robust to random errors in the training set, so we add noise for our labels and get an **Accuracy Curve**(it should be the general accuracy curve and not general)
 
 In addtion, we are going to hide some data, as we can see this function is an one-to-one correspondence, but when we hide one letter(eg, z) if the deep learning algrithm can learned it should be follow the same rule?**(We will try this in 1\*20\*20*1 neural network.)**
+
+Rather than only consider one letter once, we are also care about sequence. If we given sequence, can our model learn the rule as well? We will start at sequence with length 2. More deeply, if we given label AB can it learned BA?
+
+After that, we are trying to use **hand-writing letter** image to train a neural to learn it and generate it. Of course, see if it can decoded it once given correct labels.
+
 # Caeser
 ## TODO list
 - [x] **Caeser ciper and impliment deep learning model**
