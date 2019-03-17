@@ -7,7 +7,7 @@ Our plan is to make model as simple as possible in order to find out the deep me
 
 Also, we are trying to figure out if the DL algorithms are robust to random errors in the training set, so we add noise for our labels and get an **Accuracy Curve**(it should be the general accuracy curve and not general)
 
-In addtion, we are going to hide some data, as we can see this function is an one-to-one correspondence, but when we hide one letter(eg, z) if the deep learning algrithm can learned it should be follow the same rule?**(We will try this in 1*20*20*1 neural network.)**
+In addtion, we are going to hide some data, as we can see this function is an one-to-one correspondence, but when we hide one letter(eg, z) if the deep learning algrithm can learned it should be follow the same rule?**(We will try this in 1\*20\*20*1 neural network.)**
 # Caeser
 ## TODO list
 - [x] **Caeser ciper and impliment deep learning model**
