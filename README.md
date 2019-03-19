@@ -111,7 +111,12 @@ The DL algorithm has a rubost property for random mislabelled data especially wh
 https://github.com/MorvanZhou/tutorials/issues/30~~
 
 ## Python tips
-* List to array
+* List to array(Clever)
+```{python}
+from keras.utils import to_categorical
+categorical_labels = to_categorical(int_labels, num_classes=None)
+```
+* List to array(Stupid)
 ```{python}
 variable_name = np.array(yourlist_name)
 ```
