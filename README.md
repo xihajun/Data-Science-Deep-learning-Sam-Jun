@@ -17,11 +17,14 @@ After that, we are trying to use **hand-writing letter** image to train a neural
 ## TODO list
 - [x] **Caeser ciper and impliment deep learning model**
 * Caeser encryption function prediction
-- [ ] **Try to play around with caeser ciper and deep learning input and output**
-    - [ ] input 3(d) -- output a(0)
-    - [ ] input 3(d) -- output (1,0,0,...,0)
-    - [ ] input (0,0,0,1,0,...,0) -- output a(0)
+- [x] **Try to play around with caeser ciper and deep learning input and output**
+    - [x] input 3(d) -- output a(0)
+        When dimensions of input and output are 1, the model cannot learn things well even we tried a lot of different loss function and activation function. For the data without XYZ which means when the system doesn't take the shift 23-0, 24-1, 25-2 into account the result will be better, but bascially it just learned the linear function. The possible solution is rather just use the integer data, we can add more data between integers and guide the model learn things better.
+    - [x] input 3(d) -- output (1,0,0,...,0)
+        Similarly, the one input cannot get a better preformance.
+    - [x] input (0,0,0,1,0,...,0) -- output a(0)
     - [x] input (0,0,0,1,0,...,0) -- output (1,0,0,...,0)
+        The last one, contains a lot of data information, which transfer the question into a classification problem and also can get a quite good result.
 - [ ] **Analyse this results**
 
    For example, which model minimises the number of echos 
@@ -35,16 +38,17 @@ After that, we are trying to use **hand-writing letter** image to train a neural
     Try to visualize it by using tensorboard<br>
 - [x] **Try to add more training data, see if things change**<br>
     **It reduces the num of epochs.**
-    If it is better, try to explain why<br>
-    If it is not, maybe 23 is enough?<br>
+   
+    ~~If it is better, try to explain why<br>~~
+    ~~If it is not, maybe 23 is enough?<br>~~
 * My prior: Maybe more data can make the training procedure faster? I don't know given the same input how doesthe neural network learn? Stop updating or **keep updating**?
+
 - [ ] **Try to hide some data**
 * For human, it is reasonable if we hide z, we are able to judge the one we cannot see (high probability)
 * I tried it makes no sense so far. 98%?
 - [x] **Try to given pairs of data, and change the structure of neural output and input**
 * How many we combination we have? **676** (no order). More deeperly, combining with more words (we know the number of combination is too large, we just want to test, if neural network could learn something unseen?
 * Need a smart way to do this (consider to restruct the input and output as well as the order)<br>
-
 
 <table>
 <tr><th>Example 1 </th><th>Example 2</th></tr>
@@ -68,10 +72,14 @@ Testing | BA | ED |No
 
 * Idea: (1,1,0,0,0) or (1,2,0,0,0)
 * Defined an position matrix which considers the order
+**In addtion, we tried 3 letters combinations.**
+
 
 - [x] **Add noise for the dataset**
 * Given 0.1 0.2 errors, see the prediction results
 * plot the prediction acc
+
+The DL algorithm has a rubost property for random mislabelled data especially when the data size is big. However, for the data mislabelled on system arranged (for example, set all the cats as dogs, DL model doesn't have this property anymore.)
 
 - [ ] **Watching videos and papers for logic programming**
 
