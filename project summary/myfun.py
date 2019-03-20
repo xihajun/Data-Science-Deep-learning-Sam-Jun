@@ -129,7 +129,7 @@ def data_genelization(sample_size = 2,loops = 1000, size = 26, key = 3, x_as_vec
 
 def misslabeled_data_genelization(sample_size = 2,loops = 1000, size = 26, key = 3, prob = 0.1, x_as_vector = False, y_as_vector = False):
     '''
-        data_genelization(sample_size = 2,loops = 1000, size = 26, key = 3, x_as_vector = False, y_as_vector = False):
+        misslabeled_data_genelization(sample_size = 2,loops = 1000, size = 26, key = 3, prob = 0.1, x_as_vector = False, y_as_vector = False)
         return x_train, label with equual size, labels with 1 dimension
     '''
     temp = ''.join(random.choices(string.ascii_uppercase[0:size], k = sample_size))
@@ -160,7 +160,36 @@ def misslabeled_data_genelization(sample_size = 2,loops = 1000, size = 26, key =
         train = np.vstack([train,b.flatten()])
     return(train,label_equalsize,label_smaller)
 
+def misslabeled_data_genelization_try_speedup(sample_size = 2,loops = 1000, size = 26, key = 3, prob = 0.1, x_as_vector = False, y_as_vector = False):
+    '''
+        TODO: speed it up
+    '''
+    temp = ''.join(random.choices(string.ascii_uppercase[0:size], k = loops*sample_size))
 
+    ciphertext, ciphernum, plainnum = caeserde(temp[0:2], key = key, size = size, x_as_vector = x_as_vector, y_as_vector = y_as_vector)
+    a = letter_position_matrix(plainnum, size = size)
+    b = letter_position_matrix(ciphernum, size = size)
+    # flatten label and training set
+    label_equalsize = a.flatten()
+    label_smaller = np.array(plainnum)
+    train = b.flatten()
+    for i in range(loops-1):
+        # caeser decoding
+        ciphertext, ciphernum, plainnum = caeserde(temp[i+2:i+4], key = key, size = size, x_as_vector = x_as_vector, y_as_vector = y_as_vector)
+        # get the letter position matrix for plaintext and cipertext
+        b = letter_position_matrix(ciphernum, size = size)
+        # sample randomly with prob = 0.1
+        if random.random()<=prob:
+            plainnum = [random.randint(0,25),random.randint(0,25)]
+        
+        a = letter_position_matrix(plainnum, size = size)
+        label_smaller = np.vstack([label_smaller,np.array(plainnum)])
+        # get labels with 1 dimension (eg. abc, 123)
+        # flatten label and training set
+        label_equalsize = np.vstack([label_equalsize,a.flatten()])
+
+        train = np.vstack([train,b.flatten()])
+    return(train,label_equalsize,label_smaller)
 
 def caeserde_train_26_label_26(plaintext, key=3):
     L2I = dict(zip("ABCDEFGHIJKLMNOPQRSTUVWXYZ", range(26)))
