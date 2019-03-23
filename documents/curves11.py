@@ -123,8 +123,8 @@ def misslabeled_data_genelization(sample_size = 2,loops = 1000, size = 26, key =
         train = np.vstack([train,b.flatten()])
     return(train,label_equalsize,label_smaller)
 
-def plot_acc_prob_curve_5000(prob):
-    x_train, y_train, y_train_small = misslabeled_data_genelization(loops=5000, prob=prob)
+def plot_acc_prob_curve_500(prob):
+    x_train, y_train, y_train_small = misslabeled_data_genelization(loops=500, prob=prob)
     # assume that we have got our data x_train y_train
     # now we are going to train it in our model
     model = Sequential()
@@ -140,7 +140,7 @@ def plot_acc_prob_curve_5000(prob):
     count = diff.count(True)/len(diff)
     return(count)
 
-info5000 = list(map(plot_acc_prob_curve_5000,np.arange(0,1,.01)))
+info500 = list(map(plot_acc_prob_curve_500,np.arange(0,1,.01)))
 
-with open('noise_size_5000.pickle', 'wb') as f:
-    pickle.dump(info5000, f)
+with open('noise_size_500.pickle', 'wb') as f:
+    pickle.dump(info500, f)
