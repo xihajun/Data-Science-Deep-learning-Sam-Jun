@@ -1,1 +1,1 @@
-All the file is in the project.ipynb
+All the detail is in the project.ipynb
