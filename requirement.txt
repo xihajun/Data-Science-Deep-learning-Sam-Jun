@@ -2,29 +2,40 @@
 # https://github.com/damnever/pigar
 
 # documents/documents/myfun.py: 11,12
+# documents/documents/project.py: 18,19,20,22,23,27,28,29,122,516,517,518,520,521,604,678,706,707,708,710,711,796,797,944,945,1083,1084,1235,1236,1297,1423,1424
 # documents/documents/tensorflowtry.py: 11,12,62,63,64
 # testing-google-colab-master/data/nn_model1.py: 1,2
 Keras == 2.2.4
 
+# documents/documents/project.py: 391
+ipython == 7.2.0
+
+# documents/documents/project.py: 105,243,370,426,618,692,774,873,926,1670
+matplotlib == 3.0.2
+
 # documents/documents/myfun.py: 13
+# documents/documents/project.py: 21,402,519,709,795,943,1082,1234,1503,1546,1589,1645,1669
 # documents/documents/tensorflowtry.py: 13
 # testing-google-colab-master/data/nn_model1.py: 3
 numpy == 1.15.4
 
 # documents/documents/myfun.py: 10
+# documents/documents/project.py: 104,242,369,617,691,773,872,925
 # documents/documents/tensorflowtry.py: 10
 # testing-google-colab-master/data/nn_model1.py: 7
 pandas == 0.23.4
 
+# documents/documents/project.py: 96,233,360,605,679,770,869,922
 # testing-google-colab-master/data/nn_model1.py: 11,54,56
 scikit_learn == 0.20.1
+
+# documents/documents/project.py: 103,241,368,616,690,772,871,924
+seaborn == 0.9.0
 
 # documents/documents/myfun.py: 9
 # documents/documents/tensorflowtry.py: 9
 tensorflow == 1.13.0rc2
 
-
-seaborn
 #pip install pydot
 # error OSError: `pydot` failed to call GraphViz.Please install GraphViz (https://www.graphviz.org/) and ensure that its executables are in the $PATH.
 
