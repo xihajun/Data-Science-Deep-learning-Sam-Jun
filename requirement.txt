@@ -1,4 +1,5 @@
-pip install pydot
+seaborn
+#pip install pydot
 # error OSError: `pydot` failed to call GraphViz.Please install GraphViz (https://www.graphviz.org/) and ensure that its executables are in the $PATH.
 
-brew install graphviz
+#brew install graphviz
