@@ -1,3 +1,22 @@
+## Report
+Our final code can be find in [./project summary/project.ipynb](https://github.com/xihajun/Data-Science-Deep-learning-Sam-Jun/tree/master/project%20summary)
+
+# Install requirements
+
+All the requirements are in requirements.txt file, you can either use `pip install -r requirements.txt` to get the package installed or do some set up things as follows:
+
+## Set up
+
+If you have Jupyter in your requirements.txt and you activate that environment (I recommend Virtualenv), install, and run Jupyter, you'll have all the specific versions you want. So:
+
+     python3 -m venv venv
+     source venv/bin/activate #(different command on Windows)
+     pip install -r requirements.txt
+     jupyter notebook
+## Requirement
+     pip install -r requirements.txt
+     
+     
 # Data-Science-Deep-learning-Sam_Jun
 
 As Deep learning is able to learn all the function, this time we are trying to make our model learning the encryption function.
