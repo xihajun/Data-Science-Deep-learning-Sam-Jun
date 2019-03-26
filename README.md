@@ -17,7 +17,7 @@ If you have Jupyter in your requirements.txt and you activate that environment (
      pip install -r requirements.txt
      
      
-# Data-Science-Deep-learning-Sam_Jun
+# Analysis log
 
 As Deep learning is able to learn all the function, this time we are trying to make our model learning the encryption function.
 Firstly, let start at the basic caeser encryption!(as the algorithm is determined, it might be too easy for neural networks to learn it) 
