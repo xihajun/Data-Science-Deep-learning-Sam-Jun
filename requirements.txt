@@ -8,7 +8,7 @@
 Keras == 2.2.4
 
 # documents/documents/project.py: 391
-ipython == 7.2.0
+ipython == 7.16.3
 
 # documents/documents/project.py: 105,243,370,426,618,692,774,873,926,1670
 matplotlib == 3.0.2
