@@ -17,7 +17,7 @@ matplotlib == 3.0.2
 # documents/documents/project.py: 21,402,519,709,795,943,1082,1234,1503,1546,1589,1645,1669
 # documents/documents/tensorflowtry.py: 13
 # testing-google-colab-master/data/nn_model1.py: 3
-numpy == 1.15.4
+numpy == 1.21.0
 
 # documents/documents/myfun.py: 10
 # documents/documents/project.py: 104,242,369,617,691,773,872,925
