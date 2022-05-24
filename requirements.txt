@@ -34,7 +34,7 @@ seaborn == 0.9.0
 
 # documents/documents/myfun.py: 9
 # documents/documents/tensorflowtry.py: 9
-tensorflow == 1.15.4
+tensorflow == 2.6.4
 
 #pip install pydot
 # error OSError: `pydot` failed to call GraphViz.Please install GraphViz (https://www.graphviz.org/) and ensure that its executables are in the $PATH.
